@@ -1,6 +1,6 @@
-package model;
+package Model;
 
-public class carrinhoItem {
+public class CarrinhoItem {
     private int id;
     private String nome;
     private String categoria;
@@ -8,11 +8,11 @@ public class carrinhoItem {
     private int quantidade;
     private double valorTotal;
 
-    public carrinhoItem() {
+    public CarrinhoItem(int id, String nome, String categoria, double valor, int quantidade) {
 
     }
 
-    public carrinhoItem(int id, String nome, String categoria, double valor, int quantidade, double valorTotal) {
+    public CarrinhoItem(int id, String nome, String categoria, double valor, int quantidade, double valorTotal) {
         this.id = id;
         this.nome = nome;
         this.categoria = categoria;
@@ -63,7 +63,7 @@ public class carrinhoItem {
         calcularValorTotal();
     }
 
-    public double getvalorTotal(){
+    public double getValorTotal(){
         return valorTotal;
     }
 
