@@ -1,8 +1,5 @@
-package dao;
+package DAO;
 
-import model.produtos;
-import bd.compras.conexaoBD;
-
-public class estoqueDAO {
+public class EstoqueDAO {
     //Nessa parte eu vou criar o código para adicionar produtos, ver quantidade no estoque, etc (pesquisar + sobre isso)
 }
