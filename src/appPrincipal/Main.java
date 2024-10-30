@@ -1,15 +1,15 @@
 package appPrincipal;
 
 import java.util.Scanner;
-import service.carrinhoConfig;
+
 
 public class Main {
     public static void main(String[] args) {
-        //CarrinhoConfig carrinhoConfig = new CarrinhoConfig();
+
         Scanner scanner = new Scanner(System.in);
 
         int opcoes = -1;
-        while (opcoes != 0){
+        while (opcoes != 0) {
             System.out.println("*** Escolha uma opção para seu carrinho de compras: ");
             System.out.println("1. Adicionar produto no carrinho");
             System.out.println("2. Remover produtos do carrinho");
@@ -19,12 +19,9 @@ public class Main {
             System.out.println("0. Sair do sistema");
             opcoes = scanner.nextInt();
 
-        switch (opcoes) {
-            case 1:
-                adicionarProdutoCarrinho(carrinhoConfig, scanner);
-        }
 
+            scanner.close();
         }
-        scanner.close();
     }
+
 }
