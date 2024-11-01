@@ -73,9 +73,15 @@ public class Main {
         System.out.print("Digite a quantidade do produto: ");
         int quantidade = scanner.nextInt();
 
-        Produto produto = new Produto(0, nome, categoria, valor, quantidade);
-        estoqueDAO.adicionarProduto(produto);
-        System.out.println("Produto adicionado ao estoque.");
+        if (quantidade < 1) {
+            System.out.println("A quantidade mínima do produto deve ser 1. Tente novamente.");
+        } else {
+            Produto produto = new Produto(0, nome, categoria, valor, quantidade);
+            estoqueDAO.adicionarProduto(produto);
+            System.out.println("Produto adicionado ao estoque.");
+
+        }
+
     }
 
     private static void listarProdutosEstoque() throws SQLException {
