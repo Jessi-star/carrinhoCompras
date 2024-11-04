@@ -16,11 +16,27 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-    public int getId() { return id; }
-    public String getNome() { return nome; }
-    public String getCategoria() { return categoria; }
-    public double getValor() { return valor; }
-    public int getQuantidade() { return quantidade; }
+    public int getId() {
+        return id;
+    }
 
-    public void setQuantidade(int quantidade) { this.quantidade = quantidade; }
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
 }

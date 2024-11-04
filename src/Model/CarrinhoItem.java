@@ -14,8 +14,16 @@ public class CarrinhoItem {
     }
 
 
-    public int getId() { return id; }
-    public Produto getProduto() { return produto; }
-    public int getQuantidade() { return quantidade; }
-    public double getValorTotal() { return valorTotal; }
+    public int getId() {
+        return id;
+    }
+    public Produto getProduto() {
+        return produto;
+    }
+    public int getQuantidade() {
+        return quantidade;
+    }
+    public double getValorTotal() {
+        return valorTotal;
+    }
 }
